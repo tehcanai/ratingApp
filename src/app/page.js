@@ -58,7 +58,7 @@ export default function App() {
                 Your opinion is essential to us.
               </Typography>
               </div>
-              <div className="flex flex-row justify-between my-5 sm:px-0 px-5">
+              <div className="flex flex-row justify-between mb-5 sm:px-0 px-5">
                 <CircleButton value="1" onClick={() => {SelectRating(1)}} selected={buttonIsSelected(1)}/>
                 <CircleButton value="2" onClick={() => {SelectRating(2)}} selected={buttonIsSelected(2)}/>
                 <CircleButton value="3" onClick={() => {SelectRating(3)}} selected={buttonIsSelected(3)}/>
