@@ -43,11 +43,12 @@ export default function App() {
         <div className=" sm:max-w-5xl items-center justify-center flex">
           {(!isSubmitted) ?
           <Card style={{backgroundColor: theme.dark_slate, borderRadius: '3%'}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-3 pt-8">
-            <CardMedia style={{width: "50%", height: "30%"}}
+            <CardMedia style={{width: "50%"}}
             component= "img"
             src="review.svg">
             </CardMedia>
             <CardContent>
+              <div className="flex flex-col justify-between sm:px-0 px-10">
               <Typography align="left" gutterBottom="24" color={theme.light_grey} style={{fontFamily: poppins.style.fontFamily, fontWeight: 600, fontSize: '30px'}}>
                 Rate Us!
               </Typography>
@@ -56,6 +57,7 @@ export default function App() {
                 you could take a moment to rate our service. 
                 Your opinion is essential to us.
               </Typography>
+              </div>
               <div className="flex flex-row justify-between my-5 sm:px-0 px-5">
                 <CircleButton value="1" onClick={() => {SelectRating(1)}} selected={buttonIsSelected(1)}/>
                 <CircleButton value="2" onClick={() => {SelectRating(2)}} selected={buttonIsSelected(2)}/>
@@ -76,8 +78,8 @@ export default function App() {
             </CardMedia>
             <CardContent className="flex flex-col items-center">
               <Typography align="center" color={theme.orange} backgroundColor={{backgroundColor: theme.dark_grey}} 
-              style={{fontFamily: poppins.style.fontFamily, fontSize: '14px', paddingTop: '1px', marginTop: '4x', fontWeight: 500, 
-                      width: '70%', height: 'fit-content', borderRadius: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
+              style={{fontFamily: poppins.style.fontFamily, fontSize: '14px', paddingTop: '2px', paddingBottom: '2px', marginTop: '4x', fontWeight: 500, 
+                      width: '75%', height: 'fit-content', borderRadius: '9999px'}}>
                 You rate us {rating} out of 5
               </Typography>
               <Typography align="center" gutterBottom="24" color={theme.light_grey} style={{fontFamily: poppins.style.fontFamily, fontWeight: 600, fontSize: '30px', paddingTop: '10px'}}>
