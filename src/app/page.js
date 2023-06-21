@@ -48,10 +48,11 @@ export default function App() {
             src="review.svg">
             </CardMedia>
             <CardContent>
-              <Typography align="left" gutterBottom="24" color={theme.light_grey} className={clsx(poppins.className, "font-semibold text-3xl sm:px-0 px-8")}>
+              <Typography align="left" gutterBottom="24" color={theme.light_grey} style={{fontFamily: poppins.style.fontFamily, fontWeight: 600, fontSize: '30px'}}>
                 Rate Us!
               </Typography>
-              <Typography paragraph="true" color={{color: "#9ca3af"}} className={clsx(poppins.className, "sm:text-justify text-left font-normal text-m sm:px-0 px-8")}>
+              <Typography paragraph="true" color={{color: "#9ca3af"}}
+              style={{fontFamily: poppins.style.fontFamily, fontWeight: 400, fontSize: '14px', textAlign: 'left'}}>
                 We highly value your feedback and would greatly appreciate it if 
                 you could take a moment to rate our service. 
                 Your opinion is essential to us.

@@ -27,8 +27,12 @@ export default function CircleButton(props) {
         style={{backgroundColor: (props.selected ? theme.normal_grey : (isHover ? theme.orange : theme.dark_grey)), 
                 color: theme.light_grey, 
                 borderRadius: '50%', 
-                scale: isClicked ? '0.85' : '0.8'}}
-        className={clsx("text-xl w-6 h-14", poppins.className)}
+                scale: isClicked ? '0.85' : '0.8',
+                fontFamily: poppins.style.fontFamily,
+                width: '24px',
+                height: '56px',
+                fontSize: '20px',
+            }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onPointerDown={handleClick}
