@@ -42,7 +42,7 @@ export default function App() {
     <main style={{backgroundColor: theme.very_dark_slate}} className="flex min-h-screen flex-col items-center justify-between sm:px-20 pt-24">
         <div className=" sm:max-w-5xl items-center justify-center flex">
           {(!isSubmitted) ?
-          <Card style={{backgroundColor: "#1e293b"}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-3 pt-8 rounded-xl">
+          <Card style={{backgroundColor: theme.dark_slate, borderRadius: '3%'}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-3 pt-8">
             <CardMedia style={{width: "50%", height: "30%"}}
             component= "img"
             src="review.svg">
@@ -51,8 +51,7 @@ export default function App() {
               <Typography align="left" gutterBottom="24" color={theme.light_grey} style={{fontFamily: poppins.style.fontFamily, fontWeight: 600, fontSize: '30px'}}>
                 Rate Us!
               </Typography>
-              <Typography paragraph="true" color={{color: "#9ca3af"}}
-              style={{fontFamily: poppins.style.fontFamily, fontWeight: 400, fontSize: '14px', textAlign: 'left'}}>
+              <Typography paragraph="true" color={{color: theme.normal_grey}} style={{fontFamily: poppins.style.fontFamily, fontWeight: 400, fontSize: '14px', textAlign: 'left'}}>
                 We highly value your feedback and would greatly appreciate it if 
                 you could take a moment to rate our service. 
                 Your opinion is essential to us.
@@ -70,19 +69,21 @@ export default function App() {
             </CardContent>
           </Card> 
           :
-          <Card style={{backgroundColor: "#1e293b"}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-5 pt-8 rounded-xl">
+          <Card style={{backgroundColor: theme.dark_slate, borderRadius: '3%'}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-5 pt-8">
             <CardMedia style={{width: "50%", height: "40%"}}
             component= "img"
             src="thankyou.svg">
             </CardMedia>
             <CardContent className="flex flex-col items-center">
-              <Typography align="center" color={theme.orange} backgroundColor={{backgroundColor: theme.dark_grey}}className={clsx(poppins.className, "font-normal lg:text-m text-sm mt-4 pt-1 rounded-full sm:w-4/6 w-5/6 h-8")}>
+              <Typography align="center" color={theme.orange} backgroundColor={{backgroundColor: theme.dark_grey}} 
+              style={{fontFamily: poppins.style.fontFamily, fontSize: '14px', paddingTop: '1px', marginTop: '4x', fontWeight: 500, 
+                      width: '70%', height: 'fit-content', borderRadius: '10px', paddingLeft: '10px', paddingRight: '10px'}}>
                 You rate us {rating} out of 5
               </Typography>
-              <Typography align="center" gutterBottom="24" color={theme.light_grey} className={clsx(poppins.className, "font-semibold text-3xl mt-4")}>
+              <Typography align="center" gutterBottom="24" color={theme.light_grey} style={{fontFamily: poppins.style.fontFamily, fontWeight: 600, fontSize: '30px', paddingTop: '10px'}}>
                 Thank You!
               </Typography>
-              <Typography align="center" paragraph="true" color={{color: "#9ca3af"}} className={clsx(poppins.className, "text-center font-normal sm:text-m text-sm mt-4")}>
+              <Typography align="center" paragraph="true" color={{color: theme.normal_grey}} style={{fontFamily: poppins.style.fontFamily, fontWeight: 400, fontSize: '14px', textAlign: 'center'}}>
                 We value the time you've taken to rate our service.
                 If you require any assistance, please don't hesitate to react out to us.
               </Typography>
