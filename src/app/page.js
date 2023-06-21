@@ -43,7 +43,7 @@ export default function App() {
         <div className=" sm:max-w-5xl items-center justify-center flex">
           {(!isSubmitted) ?
           <Card style={{backgroundColor: "#1e293b"}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-3 pt-8 rounded-xl">
-            <CardMedia className="sm:w-1/2 w-3/4 h-30"
+            <CardMedia style={{width: "50%", height: "30%"}}
             component= "img"
             src="review.svg">
             </CardMedia>
@@ -70,7 +70,7 @@ export default function App() {
           </Card> 
           :
           <Card style={{backgroundColor: "#1e293b"}} className="flex flex-col lg:w-2/5 md:w-3/6 w-5/6 items-center justify-center sm:px-5 px-5 pt-8 rounded-xl">
-            <CardMedia className="sm:w-1/2 w-40"
+            <CardMedia style={{width: "50%", height: "40%"}}
             component= "img"
             src="thankyou.svg">
             </CardMedia>
