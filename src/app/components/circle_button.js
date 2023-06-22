@@ -1,6 +1,6 @@
 import Button from '@mui/material/Button';
-import {theme} from '../utils/theme';
-import { poppins } from '../utils/fonts';
+import {theme} from '../style/theme';
+import { poppins } from '../style/fonts';
 import clsx from 'clsx';
 import { useState } from 'react';
 

@@ -9,8 +9,8 @@ import clsx from 'clsx';
 
 import CircleButton from "./components/circle_button"
 import SubmitButton from "./components/submit_button"
-import { poppins } from './utils/fonts';
-import {theme} from "./utils/theme"
+import { poppins } from './style/fonts';
+import {theme} from "./style/theme"
 
 
 export default function App() {
