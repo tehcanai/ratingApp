@@ -5,7 +5,6 @@ import Card from "@mui/material/Card"
 import CardContent from "@mui/material/CardContent"
 import CardMedia from "@mui/material/CardMedia"
 import Typography from '@mui/material/Typography';
-import clsx from 'clsx';
 
 import CircleButton from "./components/circle_button"
 import SubmitButton from "./components/submit_button"

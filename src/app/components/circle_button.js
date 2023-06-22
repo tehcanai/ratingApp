@@ -1,7 +1,6 @@
 import Button from '@mui/material/Button';
 import {theme} from '../style/theme';
 import { poppins } from '../style/fonts';
-import clsx from 'clsx';
 import { useState } from 'react';
 
 export default function CircleButton(props) {
