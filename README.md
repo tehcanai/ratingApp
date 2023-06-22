@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Framework and Dependencies
 
-First, run the development server:
+This project is developed with the NextJS framework and uses several packages and dependencies for its development:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+-Tailwind
+-MaterialUI
+-NextJS Google Fonts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+/app
+|---/components
+|     |---circle_button.js
+|     |---submit_button.js
+|---/style
+|     |---fonts.js
+|     |---theme.js
+|---layout.js
+|---page.js
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# page.js :
+This is the main page that renders the app. Here, the app renders either the rating card or the thank you card depending on whether a rating has been submitted or not.
+Both the rating card and thank you card are defined here. The behaviour of the app and its components are dependent on three states eg. rating, isSelected, isSubmitted.
 
-## Learn More
+# theme.js :
+This file exports the theme of the app to be used by other components and pages
 
-To learn more about Next.js, take a look at the following resources:
+# fonts.js :
+This file exports the font of the app to be used by other components and pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# circle_button.js :
+The circle button where users will select their chosen rating is defined here. The circle button is used in the rating card. The code here defines the behaviour of the button when it is hovered over, when clicked on, and when it is selected.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# submit_button.js :
+The submit buttom where users will click on to submit their rating is defined here. The submit button is used in the rating card. The code here defines the behaviour of the button when it is hovered over, when clicked on, and when it is selected.
