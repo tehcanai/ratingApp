@@ -11,6 +11,7 @@ This project is developed with the NextJS framework and uses several packages an
 
 # Structure
 
+```
 /app
 |---/components
 |     |---circle_button.js
@@ -20,6 +21,7 @@ This project is developed with the NextJS framework and uses several packages an
 |     |---theme.js
 |---layout.js
 |---page.js
+```
 
 - **page.js**
 
@@ -35,9 +37,9 @@ This file exports the theme of the app to be used by other components and pages
 This file exports the font of the app to be used by other components and pages
 
 - **circle_button.js**
-- 
+  
 The circle button where users will select their chosen rating is defined here. The circle button is used in the rating card. The code here defines the behaviour of the button when it is hovered over, when clicked on, and when it is selected.
 
 - **submit_button.js**
-- 
+  
 The submit buttom where users will click on to submit their rating is defined here. The submit button is used in the rating card. The code here defines the behaviour of the button when it is hovered over, when clicked on, and when it is selected.
