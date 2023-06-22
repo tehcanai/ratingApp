@@ -30,11 +30,11 @@ Both the rating card and thank you card are defined here. The behaviour of the a
 
 - **theme.js** 
 
-This file exports the theme of the app to be used by other components and pages
+This file exports the theme of the app to be used by other components and pages.
 
 - **fonts.js**
 
-This file exports the font of the app to be used by other components and pages
+This file exports the font of the app to be used by other components and pages.
 
 - **circle_button.js**
   
